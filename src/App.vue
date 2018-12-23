@@ -1,27 +1,22 @@
 <template>
-  <div id="app">
-    <svg
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-    >
-      <rect
-        x="0"
-        y="0"
-        width="100%"
-        height="100%"
-        fill="grey"
-      />
-    </svg>
-  </div>
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+    <Service x="10" y="10" width="20" height="15" fill="grey" label="Consolidator" />
+    <Service x="10" y="50" width="20" height="15" fill="red" label="Normality Generator" />
+  </svg>
 </template>
 
 <script>
+import Service from "./components/Service.vue";
+
 export default {
-  name: "app"
+  name: "app",
+  components: {
+    Service
+  }
 };
 </script>
 
-<style>
+<style scoped>
 svg {
   position: fixed;
   top: 0;
