@@ -1,10 +1,10 @@
 <template>
-  <svg viewBox="0 0 100 100"> <!-- preserveAspectRatio="align" -->
-    <Service x="10" y="10" label="Consolidator" />
-    <Service x="10" y="50" label="Normality Generator" />
-    <Service x="30" y="30" label="Recorder of Anomalies" />
-    <Service x="50" y="10" label="Predictor" />
-    <Service x="50" y="50" label="Alarm Generator" />
+  <svg viewBox="0 0 350 150"> <!-- preserveAspectRatio="align" -->
+    <Service x="50" y="15" width="50" label="Consolidator" />
+    <Service x="150" y="15" width="50" label="Normality Generator" />
+    <Service x="50" y="100" width="50" label="Recorder of Anomalies" />
+    <Service x="150" y="100" width="50" label="Predictor" />
+    <Service x="250" y="100" width="50" label="Alarm Generator" />
   </svg>
 </template>
 
@@ -21,10 +21,11 @@ export default {
 
 <style scoped>
 svg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  background-color: gray
 }
 </style>
