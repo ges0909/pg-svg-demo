@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 350 150"> <!-- preserveAspectRatio="align" -->
+  <svg width="350" height="150" viewBox="0 0 350 150">
     <Service x="50" y="15" width="50" label="Consolidator" />
     <Service x="150" y="15" width="50" label="Normality Generator" />
     <Service x="50" y="100" width="50" label="Recorder of Anomalies" />
@@ -26,6 +26,6 @@ svg {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: gray
+  background-color: #FFF8F0;
 }
 </style>
